@@ -1,5 +1,9 @@
 #Imports
 import os
+import sys
+import pygame
+
+os.system('brew install ffmpeg --with-libvpx')
 
 #google text to speech
 from gtts import gTTS
@@ -61,7 +65,7 @@ def unpause():
     mixer.music.unpause()
 
 def quitpy():
-    quit()
+    sys.exit()
 
 
 def volup():
