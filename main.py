@@ -3,8 +3,6 @@ import os
 import sys
 import pygame
 
-os.system('brew install ffmpeg --with-libvpx')
-
 #google text to speech
 from gtts import gTTS
 
