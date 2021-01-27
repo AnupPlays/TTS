@@ -1,4 +1,4 @@
 # TTS
 This is a python project that uses BS4, Requests, TKinter, Pydub, Pygame, and Gtts to scrape a website of your choosing. There is a package installerlinked below. Use this to install the app and any nessesary unix executables into your pc.
 
-<https://drive.google.com/file/d/1HAqe4k4t0Oa6PWWmp9vzIRQSzg-onS7V/view?usp=sharing>
+<https://drive.google.com/file/d/1KjKxvjkD-TzsNEpbnSTQ3P-N33J5u_wj/view?usp=sharing>
