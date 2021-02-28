@@ -23,10 +23,6 @@ from tkinter import messagebox
 from os import path
 from pydub import AudioSegment
 
-import speech_recognition as spr
-import pyttsx3
-
-r = spr.Recognizer()
 
 #variable declarations
 x = str()
@@ -123,25 +119,8 @@ ttk.Button(mainframe, text="+", command=volup).grid(column=2, row=7, sticky=S)
 ttk.Button(mainframe, text="-", command=voldown).grid(column=4, row=7, sticky=S)
 
 thing = ttk.Combobox(mainframe, textvariable=countryvar, values=["en", "fr", "es", "pt"], state='readonly', width=5).grid(column=3, row=8)
-countryvar.set('en')
-
-def stt():
-    x = 1
-    while(1):
-        with spr.Microphone() as source2:
-
-            r.adjust_for_ambient_noise(source2, duration=0)
-
-            audio2 = r.listen(source2)
-
-            myText = r.recognize_google(audio2)
-            myText = myText.lower()
-
-            print(myText)
-            if (myText == 'quit'):
-                break
-
-ttk.Button(mainframe, text="stt", command=stt).grid(column=3, row=9)
+thing.current(0)
+ttk.Button(mainframe, text="check", command=check).grid(column=3, row=9)
 
 for child in mainframe.winfo_children(): child.grid_configure(padx=5, pady=5)
 
